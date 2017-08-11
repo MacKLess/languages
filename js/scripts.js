@@ -2,9 +2,9 @@ $(document).ready(function(){
   var front, back, yes, no, big, small, pro, con
   $(".page1btn").click(function(){
     $(".page").addClass("hide");
-    $(".page1").removeClass("hide");
+    $(".page2").removeClass("hide");
   });
-  
+
   $(".page2btn").click(function(){
     if ($("input[value='front']").prop("checked")){
       front = true;
@@ -15,7 +15,7 @@ $(document).ready(function(){
     else if ($("input[value='back']").prop("checked")){
       back = true;
       $(".page").addClass("hide");
-      $(".page2").removeClass("hide");
+      $(".page3").removeClass("hide");
     }
     else{
       alert ('Please select an option!');
@@ -46,18 +46,22 @@ $(document).ready(function(){
         alert('Java');
         //finalPage();
       }
-      else if (yes == true){
+      else if (back == true && yes == true){
         $(".page5").removeClass("hide");
       }
       else{
         alert('Please select an option!')
       }
     }
-    else if ($("input[value='small']").prop("checkout")){
+    else if ($("input[value='small']").prop("checked")){
       small = true;
       $(".page").addClass("hide");
       if (back == true && no == true){
         alert('Ruby');
+        //finalPage();
+      }
+      else if (back == true && yes == true){
+        alert('PHP alt');
         //finalPage();
       }
       else {
@@ -72,7 +76,7 @@ $(document).ready(function(){
 
 
   $(".page5btn").click(function(){
-    if ($("input[value='pro']").prop("checkout")){
+    if ($("input[value='pro']").prop("checked")){
       pro = true;
       $(".page").addClass("hide");
       if(back == true && yes == true && big == true){
@@ -83,7 +87,7 @@ $(document).ready(function(){
         alert ('Please select an option')
       }
     }
-    else if ($("input[value='con']").prop("checkout")){
+    else if ($("input[value='con']").prop("checked")){
       con = true;
       $(".page1").removeClass("hide");
       if(back = true && yes == true && big == true){
