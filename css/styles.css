@@ -4,3 +4,45 @@
 .page label {
   display: block;
 }
+ul {
+  margin-left: -4rem;
+}
+li {
+  margin-left: 3rem;
+}
+.container {
+  border: 1px solid #0e0b0b;
+  border-radius: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 4rem;
+  position: absolute;
+  margin: 11rem;
+  background-color: rgba(179, 240, 255, 0.82)
+}
+.img {
+  position: relative;
+  width: 50rem;
+  width: 100%;
+  max-width: 100%;
+}
+#kitteh{
+  width:35rem;
+  float: right;
+  border-radius: 17rem;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  color: red;
+}
+#trick {
+  float: left;
+  margin-bottom: 10rem;
+  border-radius: 1rem;
+  margin-right: 3rem;
+}
+.page label {
+  margin: 3rem;
+  display: block;
+}
