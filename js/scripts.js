@@ -2,7 +2,23 @@ $(document).ready(function(){
   var front, back, yes, no, big, small, pro, con
   $(".page1btn").click(function(){
     $(".page").addClass("hide");
-    $(".page2").removeClass("hide");
+    $(".pagetrick").removeClass("hide");
+  });
+
+  $(".pagetrickbtn").click(function(){
+    if ($("input[value='few']").prop("checked")){
+      few = true;
+      $(".page").addClass("hide");
+      $(".page2").removeClass("hide");
+    }
+    else if ($("input[value='all']").prop("checked")){
+      all = true;
+      $(".page").addClass("hide");
+      $(".page2").removeClass("hide");
+    }
+    else{
+      alert ('Please select an option!');
+    }
   });
 
   $(".page2btn").click(function(){
