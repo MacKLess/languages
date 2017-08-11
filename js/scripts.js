@@ -25,8 +25,9 @@ $(document).ready(function(){
     if ($("input[value='front']").prop("checked")){
       front = true;
       $(".page").addClass("hide");
-      alert('CSS_Design');
-      //finalPage();
+      $(".CSS").removeClass("hide");
+      // alert('CSS_Design');
+      // finalPage();
     }
     else if ($("input[value='back']").prop("checked")){
       back = true;
@@ -59,7 +60,8 @@ $(document).ready(function(){
       big = true;
       $(".page").addClass("hide");
       if (back == true && no == true){
-        alert('Java');
+        $(".Java").removeClass("hide");
+        // alert('Java');
         //finalPage();
       }
       else if (back == true && yes == true){
@@ -73,11 +75,13 @@ $(document).ready(function(){
       small = true;
       $(".page").addClass("hide");
       if (back == true && no == true){
-        alert('Ruby');
+        $(".Ruby").removeClass("hide");
+        // alert('Ruby');
         //finalPage();
       }
       else if (back == true && yes == true){
-        alert('PHP alt');
+        $(".PHP").removeClass("hide");
+        // alert('PHP alt');
         //finalPage();
       }
       else {
@@ -96,7 +100,8 @@ $(document).ready(function(){
       pro = true;
       $(".page").addClass("hide");
       if(back == true && yes == true && big == true){
-        alert('C#');
+        $(".Csharp").removeClass("hide");
+        // alert('C#');
         //finalPage();
       }
       else{
@@ -105,9 +110,10 @@ $(document).ready(function(){
     }
     else if ($("input[value='con']").prop("checked")){
       con = true;
-      $(".page1").removeClass("hide");
+      $(".page").addClass("hide");
       if(back = true && yes == true && big == true){
-        alert('PHP');
+        $(".PHP").removeClass("hide");
+        // alert('PHP');
         //finalPage();
       }
       else{
